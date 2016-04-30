@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/fondobueno4">
+
+    <TextView
+        android:id="@+id/nick"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="NOMBRE"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+    </TextView>
+
+    <!--Cuadro para el cuerpo-->
+    <ImageView
+        android:id="@+id/cuadro_cuerpo"
+        android:layout_height="260dp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nick"
+        android:layout_marginTop="15dp"
+        ></ImageView>
+
+    <!--Imagenes DesLizantes-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--Para pasar al siguiente Modulo-->
+    <Button
+        android:id="@+id/Next"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:background="#1ec8ce"
+        android:text="SIGUIENTE"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="AnadirImplementos"
+        android:layout_margin="10dp"></Button>
+</RelativeLayout>
